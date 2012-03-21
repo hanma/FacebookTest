@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		332459BA151A2FDE00363243 /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 332459B9151A2FDE00363243 /* Place.m */; };
+		33501AB41515C56D003553FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33501AB31515C56D003553FB /* UIKit.framework */; };
+		33501AB61515C56D003553FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33501AB51515C56D003553FB /* Foundation.framework */; };
+		33501AB81515C56D003553FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33501AB71515C56D003553FB /* CoreGraphics.framework */; };
+		33501ABE1515C56D003553FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 33501ABC1515C56D003553FB /* InfoPlist.strings */; };
+		33501AC01515C56D003553FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33501ABF1515C56D003553FB /* main.m */; };
+		33501AC41515C56D003553FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33501AC31515C56D003553FB /* AppDelegate.m */; };
+		33501AC71515C56D003553FB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33501AC51515C56D003553FB /* MainStoryboard.storyboard */; };
+		33501AD51515DE3C003553FB /* CheckinsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33501AD41515DE3C003553FB /* CheckinsViewController.m */; };
+		33501AD81515F655003553FB /* SearchPlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33501AD71515F655003553FB /* SearchPlaceViewController.m */; };
+		33501ADA1515F7AA003553FB /* SearchBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33501AD91515F7AA003553FB /* SearchBoxView.xib */; };
+		33A728781516482400322310 /* FacebookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A728771516482400322310 /* FacebookManager.m */; };
+		33A72879151649C000322310 /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A72874151647BC00322310 /* libfacebook_ios_sdk.a */; };
+		33FADA971516E30200C0DCCF /* FBRequest+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FADA961516E30200C0DCCF /* FBRequest+Block.m */; };
+		33FADA991516E62100C0DCCF /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 33FADA981516E62100C0DCCF /* libobjc.A.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33A72873151647BC00322310 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33A7286C151647BB00322310 /* facebook-ios-sdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = "facebook-ios-sdk";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		332459B8151A2FDE00363243 /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
+		332459B9151A2FDE00363243 /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
+		33501AAF1515C56D003553FB /* FbAutoCheckin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FbAutoCheckin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33501AB31515C56D003553FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		33501AB51515C56D003553FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		33501AB71515C56D003553FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		33501ABB1515C56D003553FB /* FbAutoCheckin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FbAutoCheckin-Info.plist"; sourceTree = "<group>"; };
+		33501ABD1515C56D003553FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		33501ABF1515C56D003553FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33501AC11515C56D003553FB /* FbAutoCheckin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FbAutoCheckin-Prefix.pch"; sourceTree = "<group>"; };
+		33501AC21515C56D003553FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		33501AC31515C56D003553FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		33501AC61515C56D003553FB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		33501AD31515DE3C003553FB /* CheckinsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckinsViewController.h; sourceTree = "<group>"; };
+		33501AD41515DE3C003553FB /* CheckinsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckinsViewController.m; sourceTree = "<group>"; };
+		33501AD61515F655003553FB /* SearchPlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchPlaceViewController.h; sourceTree = "<group>"; };
+		33501AD71515F655003553FB /* SearchPlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchPlaceViewController.m; sourceTree = "<group>"; };
+		33501AD91515F7AA003553FB /* SearchBoxView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchBoxView.xib; sourceTree = "<group>"; };
+		33A7286C151647BB00322310 /* facebook-ios-sdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "facebook-ios-sdk.xcodeproj"; path = "Fb/facebook-ios-sdk.xcodeproj"; sourceTree = "<group>"; };
+		33A728761516482400322310 /* FacebookManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookManager.h; sourceTree = "<group>"; };
+		33A728771516482400322310 /* FacebookManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookManager.m; sourceTree = "<group>"; };
+		33FADA951516E30200C0DCCF /* FBRequest+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FBRequest+Block.h"; sourceTree = "<group>"; };
+		33FADA961516E30200C0DCCF /* FBRequest+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FBRequest+Block.m"; sourceTree = "<group>"; };
+		33FADA981516E62100C0DCCF /* libobjc.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.A.dylib; path = usr/lib/libobjc.A.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33501AAC1515C56D003553FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33FADA991516E62100C0DCCF /* libobjc.A.dylib in Frameworks */,
+				33A72879151649C000322310 /* libfacebook_ios_sdk.a in Frameworks */,
+				33501AB41515C56D003553FB /* UIKit.framework in Frameworks */,
+				33501AB61515C56D003553FB /* Foundation.framework in Frameworks */,
+				33501AB81515C56D003553FB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33501AA41515C56D003553FB = {
+			isa = PBXGroup;
+			children = (
+				33A7286C151647BB00322310 /* facebook-ios-sdk.xcodeproj */,
+				33501AB91515C56D003553FB /* FbAutoCheckin */,
+				33501AB21515C56D003553FB /* Frameworks */,
+				33501AB01515C56D003553FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		33501AB01515C56D003553FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33501AAF1515C56D003553FB /* FbAutoCheckin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33501AB21515C56D003553FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33FADA981516E62100C0DCCF /* libobjc.A.dylib */,
+				33501AB31515C56D003553FB /* UIKit.framework */,
+				33501AB51515C56D003553FB /* Foundation.framework */,
+				33501AB71515C56D003553FB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33501AB91515C56D003553FB /* FbAutoCheckin */ = {
+			isa = PBXGroup;
+			children = (
+				332459B8151A2FDE00363243 /* Place.h */,
+				332459B9151A2FDE00363243 /* Place.m */,
+				33501AC21515C56D003553FB /* AppDelegate.h */,
+				33501AC31515C56D003553FB /* AppDelegate.m */,
+				33501AC51515C56D003553FB /* MainStoryboard.storyboard */,
+				33501AD31515DE3C003553FB /* CheckinsViewController.h */,
+				33501AD41515DE3C003553FB /* CheckinsViewController.m */,
+				33501AD61515F655003553FB /* SearchPlaceViewController.h */,
+				33501AD71515F655003553FB /* SearchPlaceViewController.m */,
+				33501AD91515F7AA003553FB /* SearchBoxView.xib */,
+				33A728761516482400322310 /* FacebookManager.h */,
+				33A728771516482400322310 /* FacebookManager.m */,
+				33FADA951516E30200C0DCCF /* FBRequest+Block.h */,
+				33FADA961516E30200C0DCCF /* FBRequest+Block.m */,
+				33501ABA1515C56D003553FB /* Supporting Files */,
+			);
+			path = FbAutoCheckin;
+			sourceTree = "<group>";
+		};
+		33501ABA1515C56D003553FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				33501ABB1515C56D003553FB /* FbAutoCheckin-Info.plist */,
+				33501ABC1515C56D003553FB /* InfoPlist.strings */,
+				33501ABF1515C56D003553FB /* main.m */,
+				33501AC11515C56D003553FB /* FbAutoCheckin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33A7286D151647BB00322310 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33A72874151647BC00322310 /* libfacebook_ios_sdk.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33501AAE1515C56D003553FB /* FbAutoCheckin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33501ACD1515C56D003553FB /* Build configuration list for PBXNativeTarget "FbAutoCheckin" */;
+			buildPhases = (
+				33501AAB1515C56D003553FB /* Sources */,
+				33501AAC1515C56D003553FB /* Frameworks */,
+				33501AAD1515C56D003553FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FbAutoCheckin;
+			productName = FbAutoCheckin;
+			productReference = 33501AAF1515C56D003553FB /* FbAutoCheckin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33501AA61515C56D003553FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = hasnotes;
+			};
+			buildConfigurationList = 33501AA91515C56D003553FB /* Build configuration list for PBXProject "FbAutoCheckin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 33501AA41515C56D003553FB;
+			productRefGroup = 33501AB01515C56D003553FB /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 33A7286D151647BB00322310 /* Products */;
+					ProjectRef = 33A7286C151647BB00322310 /* facebook-ios-sdk.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				33501AAE1515C56D003553FB /* FbAutoCheckin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		33A72874151647BC00322310 /* libfacebook_ios_sdk.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libfacebook_ios_sdk.a;
+			remoteRef = 33A72873151647BC00322310 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33501AAD1515C56D003553FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33501ABE1515C56D003553FB /* InfoPlist.strings in Resources */,
+				33501AC71515C56D003553FB /* MainStoryboard.storyboard in Resources */,
+				33501ADA1515F7AA003553FB /* SearchBoxView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33501AAB1515C56D003553FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33501AC01515C56D003553FB /* main.m in Sources */,
+				33501AC41515C56D003553FB /* AppDelegate.m in Sources */,
+				33501AD51515DE3C003553FB /* CheckinsViewController.m in Sources */,
+				33501AD81515F655003553FB /* SearchPlaceViewController.m in Sources */,
+				33A728781516482400322310 /* FacebookManager.m in Sources */,
+				33FADA971516E30200C0DCCF /* FBRequest+Block.m in Sources */,
+				332459BA151A2FDE00363243 /* Place.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		33501ABC1515C56D003553FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33501ABD1515C56D003553FB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		33501AC51515C56D003553FB /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33501AC61515C56D003553FB /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33501ACB1515C56D003553FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		33501ACC1515C56D003553FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33501ACE1515C56D003553FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FbAutoCheckin/FbAutoCheckin-Prefix.pch";
+				HEADER_SEARCH_PATHS = "./Fb/**";
+				INFOPLIST_FILE = "FbAutoCheckin/FbAutoCheckin-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		33501ACF1515C56D003553FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FbAutoCheckin/FbAutoCheckin-Prefix.pch";
+				HEADER_SEARCH_PATHS = "./Fb/**";
+				INFOPLIST_FILE = "FbAutoCheckin/FbAutoCheckin-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33501AA91515C56D003553FB /* Build configuration list for PBXProject "FbAutoCheckin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33501ACB1515C56D003553FB /* Debug */,
+				33501ACC1515C56D003553FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33501ACD1515C56D003553FB /* Build configuration list for PBXNativeTarget "FbAutoCheckin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33501ACE1515C56D003553FB /* Debug */,
+				33501ACF1515C56D003553FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33501AA61515C56D003553FB /* Project object */;
+}

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="UhD-NV-VoK">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="kKP-Tw-Kap">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8U4-R5-LGp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController id="UhD-NV-VoK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="iOC-Bl-fkU">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Hg7-pX-3tG" kind="relationship" relationship="viewControllers" id="CLL-vG-sYg"/>
+                        <segue destination="Hox-74-ZxQ" kind="relationship" relationship="viewControllers" id="tya-xQ-EqX"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="109" y="245"/>
+        </scene>
+        <!--Navigation Controller - Checkins-->
+        <scene sceneID="5S5-Jl-8Sh">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vFV-NE-JeG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="checkins" id="Hg7-pX-3tG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Checkins" id="ocK-3e-JLd"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="czy-j2-amh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ayr-M3-Z91" kind="relationship" relationship="rootViewController" id="YFv-IO-sSH"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="449" y="-268"/>
+        </scene>
+        <!--Checkins View Controller - My Checkins-->
+        <scene sceneID="qdT-GP-40D">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jum-lW-n5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController storyboardIdentifier="checkinstable" id="ayr-M3-Z91" customClass="CheckinsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="GuR-hc-hvl">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="sEX-Ee-Z9t">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ayr-M3-Z91" id="ehW-6P-0yw"/>
+                            <outlet property="delegate" destination="ayr-M3-Z91" id="jVb-mB-qu9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="My Checkins" id="2dU-mg-16M">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="quL-yE-QRy">
+                            <connections>
+                                <action selector="refresh:" destination="ayr-M3-Z91" id="zER-d4-UBn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1204" y="-110"/>
+        </scene>
+        <!--Table View Controller - Favs-->
+        <scene sceneID="cbX-Uf-YT9">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4BN-tD-euM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="r9h-f9-cKe" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="NSM-6Q-01V">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="4NP-Io-ef8">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Favs" id="3tC-Ld-TSS">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="yH7-cr-cNY">
+                            <connections>
+                                <segue destination="96O-AS-Xz5" kind="push" id="MvD-2K-Cef"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="904" y="811"/>
+        </scene>
+        <!--Search Place View Controller-->
+        <scene sceneID="BlR-5K-zit">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TEb-8k-Yox" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="96O-AS-Xz5" customClass="SearchPlaceViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="9GU-sw-RBN">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="FEY-C1-IEM">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="96O-AS-Xz5" id="MhQ-ck-90h"/>
+                            <outlet property="delegate" destination="96O-AS-Xz5" id="25W-hI-W84"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="EMO-7z-oJs"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1411" y="637"/>
+        </scene>
+        <!--Navigation Controller - Favs-->
+        <scene sceneID="kjL-Zk-TSu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aXe-Mb-TDL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="favs" definesPresentationContext="YES" id="Hox-74-ZxQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favs" id="P8h-0K-c1G"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="gDW-3c-hCo">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="r9h-f9-cKe" kind="relationship" relationship="rootViewController" id="KMX-PQ-Oyq"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="539" y="662"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="CheckinsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CheckinsViewController.h"/>
+        </class>
+        <class className="SearchPlaceViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SearchPlaceViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
